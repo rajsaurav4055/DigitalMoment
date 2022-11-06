@@ -1,5 +1,5 @@
-import { useState } from "react";
 import "./App.css";
+import TweetComponent from "./TweetComponent";
 
 function App() {
   return (
@@ -8,7 +8,9 @@ function App() {
         <div className="h-full justify-center flex bg-pink-300">Sidebar</div>
         <div className="justify-between flex flex-col">
           Mid Section Top
-          <div className="border-4">Tweet Component - Khai</div>
+          <div className="p-8">
+            <TweetComponent />
+          </div>
           <div className="border-4">Infinite Scroll Component</div>
           Mid Section Bottom
         </div>
