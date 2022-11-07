@@ -5,6 +5,8 @@ import Avatar from "./assets/avatar.json";
 import Film from "./assets/film.json";
 import Location from "./assets/location.json";
 import PP from "./assets/profile_pic.png";
+import TextareaAutosize from "react-textarea-autosize";
+
 type Props = {};
 
 const TweetComponent = (props: Props) => {
@@ -24,12 +26,18 @@ const TweetComponent = (props: Props) => {
     <div className="border-[1px] border-gray-50 rounded-xl p-4 bg-[#FCFCFC]">
       <div className="flex justify-end items-center space-x-4">
         <img src={PP} className="rounded-full h-10 w-10" />
-        <input
+        <TextareaAutosize
           className="min-h-10 w-[420px] rounded-lg border-[1px] p-2"
           onChange={(event) => {
             setText(event.target.value);
           }}
-        ></input>
+        />
+        {/* <input
+          className="min-h-10 w-[420px] rounded-lg border-[1px] p-2"
+          onChange={(event) => {
+            setText(event.target.value);
+          }}
+        ></input> */}
       </div>
       <div className="flex justify-between mt-4">
         <div className="flex space-x-2">
