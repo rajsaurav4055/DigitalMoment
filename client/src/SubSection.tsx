@@ -9,6 +9,7 @@ import TextareaAutosize from "react-textarea-autosize";
 
 type Props = {
   name?: string;
+  text?: string;
   date?: string;
   likes?: number;
   shares?: number;
@@ -16,7 +17,7 @@ type Props = {
 };
 
 const SubSection = (props: Props) => {
-  const { name, date, likes, shares, profilePic } = props;
+  const { name, text, date, likes, shares, profilePic } = props;
 
   return (
     <div className="border-[1px] border-gray-50 rounded-xl p-4 bg-[#FCFCFC]">
@@ -27,8 +28,7 @@ const SubSection = (props: Props) => {
           <h5>{date}</h5>
         </div>
       </div>
-      <div className="flex py-2">adhasjkdajkda</div>
-
+      <div className="flex py-2">{text}</div>
       <div className="flex justify-between">
         <div className="flex space-x-8 items-center">
           {likes}
