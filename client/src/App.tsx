@@ -13,10 +13,8 @@ function App() {
       <div className="flex">
         <div className="h-full justify-center flex bg-pink-300"></div>
         <div className="justify-between flex flex-col">
-          <div className="p-7">
+          <div className="p-7 space-y-4">
             <TweetComponent />
-          </div>
-          <div className="p-7">
             <InfiniteScroll />
           </div>
         </div>
