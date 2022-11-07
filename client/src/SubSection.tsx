@@ -3,8 +3,11 @@ import Lottie from "react-lottie-player";
 import Camera from "./assets/camera.json";
 import Avatar from "./assets/avatar.json";
 import Film from "./assets/film.json";
+import Heart from "./assets/heart.json";
 import Location from "./assets/location.json";
 import PP from "./assets/profile_pic.png";
+import Arrow from "./assets/arrow.json";
+import Star from "./assets/star.json";
 import TextareaAutosize from "react-textarea-autosize";
 
 type Props = {};
@@ -58,19 +61,19 @@ const SubSection = (props: Props) => {
           {/* TODO: animate on hover */}
           <Lottie
             //   loop
-            animationData={Camera}
+            animationData={Heart}
             //   play
             style={{ width: 30, height: 30 }}
           />
           <Lottie
             // loop
-            animationData={Film}
+            animationData={Arrow}
             // play
             style={{ width: 30, height: 30 }}
           />
           <Lottie
             // loop
-            animationData={Avatar}
+            animationData={Star}
             // play
             style={{ width: 30, height: 30 }}
           />
