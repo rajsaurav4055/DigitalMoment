@@ -3,6 +3,7 @@ import FillerWidget from "./FillerWidget";
 import InfiniteScroll from "./InfiniteScroll";
 import Sidebar from "./Sidebar";
 import TweetComponent from "./TweetComponent";
+import SubSection from "./SubSection";
 import GoogleMap from "./GoogleMap";
 
 function App() {
@@ -15,6 +16,10 @@ function App() {
           <div className="p-7">
             <TweetComponent />
           </div>
+          <div className="border-4 p-8">
+            <SubSection />
+            Infinite Scroll Component</div>
+          Mid Section Bottom
           <div className="p-7">
             <InfiniteScroll />
           </div>
@@ -27,6 +32,7 @@ function App() {
             <FillerWidget />
           </div>
         </div>
+        
       </div>
     </div>
   );
