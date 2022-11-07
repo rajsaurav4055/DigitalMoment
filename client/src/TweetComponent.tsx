@@ -16,7 +16,7 @@ const TweetComponent = (props: Props) => {
   const [expanded, setExpanded] = React.useState(false);
   const [type, setType] = React.useState("idea");
 
-  //   TODO: post
+  //   TODO important: post
   const onSubmit = () => {
     console.log(longitude, latitude, text, type);
     console.log(text);
@@ -32,16 +32,10 @@ const TweetComponent = (props: Props) => {
             setText(event.target.value);
           }}
         />
-        {/* <input
-          className="min-h-10 w-[420px] rounded-lg border-[1px] p-2"
-          onChange={(event) => {
-            setText(event.target.value);
-          }}
-        ></input> */}
       </div>
       <div className="flex justify-between mt-4">
         <div className="flex space-x-2">
-          {/* TODO: animate on hover */}
+          {/* TODO optional: animate on hover */}
           <Lottie
             //   loop
             animationData={Camera}
