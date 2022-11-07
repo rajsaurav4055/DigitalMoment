@@ -17,11 +17,12 @@ function App() {
           <div className="border-4">Infinite Scroll Component</div>
         </div>
         <div className="">
-          <div style={{ height: '40%', width: '40%' }}>
+          <div style={{ height: '20%', width: '20%' }}>
               <GoogleMap />
           </div>
+          <br /><br /><br /><br /><br /><br /><br /><br />
           <div>Random Widget</div>
-
+              <FillerWidget />
         </div>
       </div>
     </div>
