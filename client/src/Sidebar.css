@@ -1,3 +1,14 @@
+.bm-menu-wrap {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.bm-overlay {
+    position: fixed;
+    top: 0px;
+    left: 25px;
+}
 
 .bm-burger-button {
     position: fixed;
@@ -52,6 +63,7 @@
 
   .menu-item {
     color: rgb(148, 148, 148);
+    font-family: 'Roboto', sans-serif;
   }
 
   .bm-item:hover {
