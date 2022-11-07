@@ -2,7 +2,7 @@ import "./App.css";
 import FillerWidget from "./FillerWidget";
 import Sidebar from "./Sidebar";
 import TweetComponent from "./TweetComponent";
-import GoogleMap from './GoogleMap'
+import GoogleMap from "./GoogleMap";
 
 function App() {
   return (
@@ -17,11 +17,12 @@ function App() {
           <div className="border-4">Infinite Scroll Component</div>
         </div>
         <div className="">
-          <div style={{ height: '40%', width: '40%' }}>
-              <GoogleMap />
+          <div className="mb-4 rounded-lg">
+            <GoogleMap />
           </div>
-          <div>Random Widget</div>
-
+          <div>
+            <FillerWidget />
+          </div>
         </div>
       </div>
     </div>
