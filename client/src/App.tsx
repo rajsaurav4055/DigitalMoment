@@ -1,5 +1,6 @@
 import "./App.css";
-import Sidebar from './Sidebar';
+import FillerWidget from "./FillerWidget";
+import Sidebar from "./Sidebar";
 import TweetComponent from "./TweetComponent";
 import GoogleMap from './GoogleMap'
 
@@ -8,9 +9,7 @@ function App() {
     <div className="App">
       <Sidebar />
       <div className="flex">
-        <div className="h-full justify-center flex bg-pink-300">
-          
-        </div>
+        <div className="h-full justify-center flex bg-pink-300"></div>
         <div className="justify-between flex flex-col">
           <div className="p-8">
             <TweetComponent />
@@ -22,6 +21,7 @@ function App() {
               <GoogleMap />
           </div>
           <div>Random Widget</div>
+
         </div>
       </div>
     </div>
