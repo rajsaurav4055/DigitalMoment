@@ -17,9 +17,6 @@ function App() {
             <TweetComponent />
           </div>
           <div className="p-7">
-            <SubSection />
-          </div>
-          <div className="p-7">
             <InfiniteScroll />
           </div>
         </div>

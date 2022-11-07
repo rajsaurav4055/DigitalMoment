@@ -6,9 +6,12 @@ type Props = {};
 
 const InfiniteScroll = (props: Props) => {
   return (
-    <div className="shadow-md border-[10px] border-gray-50 rounded-xl p-4 bg-[#FCFCFC] text-left max-h-72 overflow-auto">
+    <div className="shadow-md border-[10px] border-gray-50 rounded-xl p-4 bg-[#FCFCFC] text-left max-h-[700px] overflow-auto">
       <div>
-        <SubSection name="Chetan Mangay" />
+        <SubSection name="Chetan Man" text="That sounds interesting" date="Now" likes={200} />
+        
+        
+
         <p className="px-2 py-1 text-emerald-600 hover:underline">
           #DigitalMoment
         </p>
