@@ -16,6 +16,10 @@ function App() {
           </div>
           <div className="border-4">Infinite Scroll Component</div>
         </div>
+        <div className="">
+          <div>Google Maps Widget</div>
+          <div>Random Widget</div>
+        </div>
       </div>
     </div>
   );
