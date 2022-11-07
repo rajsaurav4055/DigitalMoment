@@ -1,5 +1,6 @@
 import "./App.css";
 import TweetComponent from "./TweetComponent";
+import SubSection from "./SubSection";
 
 function App() {
   return (
@@ -11,9 +12,12 @@ function App() {
           <div className="p-8">
             <TweetComponent />
           </div>
-          <div className="border-4">Infinite Scroll Component</div>
+          <div className="border-4 p-8">
+            <SubSection />
+            Infinite Scroll Component</div>
           Mid Section Bottom
         </div>
+        
       </div>
     </div>
   );
