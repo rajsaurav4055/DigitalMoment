@@ -28,7 +28,7 @@ const TweetComponent = (props: Props) => {
         <img src={PP} className="rounded-full h-10 w-10" />
         <TextareaAutosize
           className="min-h-10 w-[420px] rounded-lg border-[1px] p-2"
-          onChange={(event) => {
+          onChange={(event: any) => {
             setText(event.target.value);
           }}
         />
