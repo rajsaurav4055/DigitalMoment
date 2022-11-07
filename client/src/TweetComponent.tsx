@@ -12,10 +12,11 @@ const TweetComponent = (props: Props) => {
   const [longitude, setLongitude] = React.useState(0);
   const [latitude, setLatitude] = React.useState(0);
   const [expanded, setExpanded] = React.useState(false);
+  const [type, setType] = React.useState("idea");
 
   //   TODO: post
   const onSubmit = () => {
-    console.log(longitude, latitude, text);
+    console.log(longitude, latitude, text, type);
     console.log(text);
   };
 
@@ -24,7 +25,7 @@ const TweetComponent = (props: Props) => {
       <div className="flex justify-end items-center space-x-4">
         <img src={PP} className="rounded-full h-10 w-10" />
         <input
-          className="h-10 w-[420px] rounded-lg border-[1px] p-2"
+          className="min-h-10 w-[420px] rounded-lg border-[1px] p-2"
           onChange={(event) => {
             setText(event.target.value);
           }}
@@ -61,14 +62,26 @@ const TweetComponent = (props: Props) => {
             style={{ width: 30, height: 30 }}
           />
         </div>
-        <button
-          className="bg-emerald-400 rounded-2xl h-fit py-2 font-bold px-4"
-          onClick={() => {
-            onSubmit();
-          }}
-        >
-          Share
-        </button>
+        <div></div>
+        <div>
+          <select
+            className="mr-2 bg-transparent"
+            onChange={(event) => {
+              setType(event?.target.value);
+            }}
+          >
+            <option value="challenge">Challenge</option>
+            <option value="idea">Idea</option>
+          </select>
+          <button
+            className="bg-emerald-400 rounded-2xl h-fit py-2 font-bold px-4"
+            onClick={() => {
+              onSubmit();
+            }}
+          >
+            Share
+          </button>
+        </div>
       </div>
       {expanded && (
         <div className="flex space-x-2">
