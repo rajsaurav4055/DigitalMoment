@@ -25,7 +25,7 @@ const SubSection = (props: Props) => {
   return (
     <div className="border-[1px] border-gray-50 rounded-xl p-4 bg-[#FCFCFC]">
       <div className="flex justify-start items-center space-x-2">
-        <img src={profilePic ?? PP} className="rounded-full h-10 w-10" />
+        <img src={profilePic} className="rounded-full h-10 w-10" />
         <div className="flex-column text-left">
           <h4>{name}</h4>
           <h5>{date}</h5>
@@ -34,20 +34,22 @@ const SubSection = (props: Props) => {
       <div className="flex py-2">{text}</div>
       <div className="flex justify-between">
         <div className="flex space-x-8 items-center">
-          {likes}
+          
           <Lottie
             //   loop
             animationData={Heart}
             //   play
             style={{ width: 30, height: 30 }}
           />
-          {shares}
+          {likes}
+          
           <Lottie
             // loop
             animationData={Arrow}
             // play
             style={{ width: 30, height: 30 }}
           />
+          {shares}
           <Lottie
             // loop
             animationData={Star}
