@@ -16,10 +16,9 @@ function App() {
           <div className="p-7">
             <TweetComponent />
           </div>
-          <div className="border-4 p-8">
+          <div className="p-7">
             <SubSection />
-            Infinite Scroll Component</div>
-          Mid Section Bottom
+          </div>
           <div className="p-7">
             <InfiniteScroll />
           </div>
@@ -32,7 +31,6 @@ function App() {
             <FillerWidget />
           </div>
         </div>
-        
       </div>
     </div>
   );
