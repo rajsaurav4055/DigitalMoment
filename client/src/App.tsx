@@ -1,21 +1,36 @@
 import "./App.css";
+import FillerWidget from "./FillerWidget";
+import InfiniteScroll from "./InfiniteScroll";
+import Sidebar from "./Sidebar";
 import TweetComponent from "./TweetComponent";
 import SubSection from "./SubSection";
+import GoogleMap from "./GoogleMap";
 
 function App() {
   return (
     <div className="App">
+      <Sidebar />
       <div className="flex">
-        <div className="h-full justify-center flex bg-pink-300">Sidebar</div>
+        <div className="h-full justify-center flex bg-pink-300"></div>
         <div className="justify-between flex flex-col">
-          Mid Section Top
-          <div className="p-8">
+          <div className="p-7">
             <TweetComponent />
           </div>
           <div className="border-4 p-8">
             <SubSection />
             Infinite Scroll Component</div>
           Mid Section Bottom
+          <div className="p-7">
+            <InfiniteScroll />
+          </div>
+        </div>
+        <div className="">
+          <div className="mb-4 rounded-lg">
+            <GoogleMap />
+          </div>
+          <div>
+            <FillerWidget />
+          </div>
         </div>
         
       </div>
