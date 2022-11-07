@@ -22,7 +22,7 @@ const SubSection = (props: Props) => {
   return (
     <div className="border-[1px] border-gray-50 rounded-xl p-4 bg-[#FCFCFC]">
       <div className="flex justify-start items-center space-x-2">
-        <img src={PP} className="rounded-full h-10 w-10" />
+        <img src={profilePic ?? PP} className="rounded-full h-10 w-10" />
         <div className="flex-column text-left">
           <h4>{name}</h4>
           <h5>{date}</h5>
