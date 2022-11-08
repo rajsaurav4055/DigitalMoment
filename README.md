@@ -1,2 +1,0 @@
-# DigitalMoment
-Morgan Stanley hackathon
